@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: #000000;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5e5d5d;
+            color: white;
+            border-spacing: 2rem;
+            padding: 1rem;
+        }
+
+        td {
+            padding: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff
+        }
+
+        caption {
+            text-align: center;
+            font-size: larger;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href='index.html'>Whisker Wonders</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Whisker Wonders</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#services" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact me</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="services">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <table>
+                            <caption>
+                                List of Dogs
+                            </caption>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Breed</th>
+                                <th>Description</th>
+                                <th>Link to adopt</th>
+                            </tr>
+
+
+                            <tr>
+                                <td data-cell="Name">Jackie</td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">German Shephard</td>
+                                <td data-cell="Description">Very Loyal</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Coco</td>
+                                <td data-cell="Age">1</td>
+                                <td data-cell="Breed">Indian</td>
+                                <td data-cell="Description">Very loyal and smart</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Biscuit</td>
+                                <td data-cell="Age">3</td>
+                                <td data-cell="Breed">Poodle Mix</td>
+                                <td data-cell="Description">Friendly and obeident</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Perry
+                                </td>
+                                <td data-cell="Age">0
+                                </td>
+                                <td data-cell="Breed">Pug
+                                </td>
+                                <td data-cell="Description">Quiet but cuddly
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Tommy
+                                </td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">Beagle
+                                </td>
+                                <td data-cell="Description">Playful and friendly but lost his hind legs in an accident
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Jackie</td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">German Shephard</td>
+                                <td data-cell="Description">Very Loyal</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Hope
+                                </td>
+                                <td data-cell="Age">3
+                                </td>
+                                <td data-cell="Breed">Indian
+                                </td>
+                                <td data-cell="Description">Happy and has an apetite
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Goru
+                                </td>
+                                <td data-cell="Age">1
+                                </td>
+                                <td data-cell="Breed">Indian
+                                </td>
+                                <td data-cell="Description">Very cheerful
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Jackie</td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">German Shephard</td>
+                                <td data-cell="Description">Very Loyal</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Laddu
+                                </td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">Pug
+                                </td>
+                                <td data-cell="Description">Loves to be outdoors. He has an underbite.
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Gandalf
+                                </td>
+                                <td data-cell="Age">5
+                                </td>
+                                <td data-cell="Breed">Indian
+                                </td>
+                                <td data-cell="Description">Extremely playful
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Jackie</td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">German Shephard</td>
+                                <td data-cell="Description">Very Loyal</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Bread
+                                </td>
+                                <td data-cell="Age">7
+                                </td>
+                                <td data-cell="Breed">Golden Retriever
+                                </td>
+                                <td data-cell="Description">Sporty and active pup. Suffers from irritable bowel
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Coco</td>
+                                <td data-cell="Age">2</td>
+                                <td data-cell="Breed">Beagle</td>
+                                <td data-cell="Description">Very playful</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Mishti</td>
+                                <td data-cell="Age">3</td>
+                                <td data-cell="Breed">Cocker Spaniel</td>
+                                <td data-cell="Description">Very friendly</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Chimps
+                                </td>
+                                <td data-cell="Age">12
+                                </td>
+                                <td data-cell="Breed">Golden Retriever
+                                </td>
+                                <td data-cell="Description">Senile and has cancer but very cuddly and happy
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Cherry
+                                </td>
+                                <td data-cell="Age">8
+                                </td>
+                                <td data-cell="Breed">Boxer
+                                </td>
+                                <td data-cell="Description">Gentle and protective
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Daisy
+                                </td>
+                                <td data-cell="Age">7
+                                </td>
+                                <td data-cell="Breed">Beagle
+                                </td>
+                                <td data-cell="Description">Sociable and cuddly
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Roxxy
+                                </td>
+                                <td data-cell="Age">10
+                                </td>
+                                <td data-cell="Breed">Labrador</td>
+                                <td data-cell="Description">Very playful</td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                            <tr>
+                                <td data-cell="Name">Bittu
+                                </td>
+                                <td data-cell="Age">8
+                                </td>
+                                <td data-cell="Breed">Indian
+                                </td>
+                                <td data-cell="Description">Nosey explorer but lost his hind leg
+                                </td>
+                                <td data-cell="Link to adopt"><a href="own.html">Click</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

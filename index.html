@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href='index.html'>Whisker Wonders</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Whisker Wonders</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contact Us</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+
+        <div class="section__text">
+            <div class="heading">
+                <div>
+                    <p><span class="name">Quartet of Paws </span>with a Gentle Loving Soul…<br>
+                        A realm where wagging tails unite with tender spirits.<br>
+                        Join the pack, adopt love and embrace joy<br>
+                        in the life of our little furry companions.
+                    </p>
+                </div>
+                <span id="element"></span>
+            </div><br>
+            <div class="btn-container">
+                <!--<button class="btn btn-color-2" onclick="window.open('resume.pdf')">Resume</button>-->
+                <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact info</button>
+            </div>
+            <!--<div id="socails-container">
+                <img src="insta.png" alt="My linkedin profile" class="icon"
+                    onclick="location.href='https://www.instagram.com/'">
+                <img src="facebook.jpg" alt="My github profile" class="icon"
+                    onclick="location.href='https://www.facebook.com/'">
+            </div>-->
+        </div>
+        <div class="section__pic-container">
+            <img src="animal.png" alt="profile pic" class="photo" />
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#about'">
+    </section>
+    <br><br><br><br><br>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Us</h1>
+        <div class="section-container">
+            <div class="about-class-container"><br>
+
+                <div class="text-container">
+                    <p id="detail">Welcome to our adoption and rescue community, where compassion fuels transformation.
+                        Our mission
+                        began with a profound commitment to elevate the lives of animals in need. Whether stray or from
+                        loving homes, we open our doors to those in need of fostering when circumstances change. Beyond
+                        adoptions that unite families, we offer temporary refuges, encouraging charitable initiatives
+                        and donations. Strays are specifically left unnoticed and sometimes face severe consequences
+                        that can also lead to death. Each contribution resonates, creating a ripple effect that
+                        profoundly impacts the lives of countless animals. We also carry out educational initiatives,
+                        awareness campaigns, and community outreach further enhance their impact, fostering a culture of
+                        empathy and responsible pet ownership. Our professional veterinary doctors are available 24X7 to
+                        aid the animals in medical distress during emergency cases. Your one phone call can save the
+                        life of an injured animal!
+                        It is the need of the hour to understand the gravity of the scenario. People are becoming more
+                        and more aware of boycotting the practice of buying and selling animals. Instead, the idea of
+                        adopting pets is becoming trendy. This is because of our work as one whole community and it
+                        won’t stop until we provide every four-legged soul with a better livelihood.
+                        Join us in this collective endeavor to nurture, protect, and advocate for our beloved
+                        companions, fostering a world where every paw finds its forever home.
+                    </p>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="adopticon.png" alt="adoption icon" class="icon">
+                        <h3>Adoption</h3>
+                        <p id="detail">Here is your chance to become a paw-parent. Join in our cause of providing the
+                            helpless
+                            animals with a caring household and join a community where every connection transform lives.
+                            Our website is a haven of furry companions waiting to be embraced into loving families. With
+                            a seamless process, we connect compassionate adopters with loyal companions ensuring every
+                            adoption is a harmonious blend of love, warmth, and lifelong devotion.
+
+                        </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="vounteericon.png" alt="volunteer+ icon" class="icon">
+                        <h3>Volunteering</h3>
+                        <p id="detail">Even a pinch of goodwill is enough to join in this social cause. One has no
+                            reason to feel
+                            ineffective if they cannot help our furry friends by adopting them due to any personal
+                            reasons. You can make your contributions by volunteering for the fostering and caretaker
+                            services at our rescue shelters by registering yourself on our platform. A 15-minute
+                            training tutorial will be given to the volunteer prior to the allocation of activities.
+                            Let's make sure no further tears fall from those hopeful eyes.
+                        </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="donateicon.png" alt="donation icon" class="icon">
+                        <h3>Donation</h3>
+                        <p id="detail">Through our donations section, even those unable to provide hands-on care can
+                            contribute to the betterment of animal lives. Your generosity fuels crucial aspects like
+                            veterinary care, nutrition, and improved living conditions, ensuring a positive and lasting
+                            change in the daily experiences of our beloved animals. Join us in making a difference, one
+                            donation at a time
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+
+    </section>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore Our</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>5+ years in welfare of animals and counting.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>Rs 10,000 worth of generous donations received, along with countless blessings
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>75 + community members actively engaged in volunteering for the cause.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>10 Veterinary Doctors and 2 Hospital Organisations connected with the community.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>200+ applications received for animal adoption
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>50+ animals provided with emergency veterinary services and medical care.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>60+ abandoned pets rescued and provided new home.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>100+ successful adoptions, connecting families with their perfect companions.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>15 dogs sent to national association for service dog training.
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon">
+                            <div>
+                                <h3>10 foster care placements, offering temporary refuge and care to animals in need
+                                </h3>
+                                <p></p>
+                            </div>
+                        </article>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#services'">
+    </section>
+    <br><br><br><br><br>
+    <section id="services">
+        <p class="section__text__p1">Checkout our</p>
+        <h1 class="title">Services</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="dog.jpg" alt="dogimg" class="service-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Adopt a Dog to help the cause</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='dogs.html'">
+                            Dogs
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="cat.jpg" alt="catimg" class="service-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Adopt a Cat to help the cause
+                    </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='cats.html'">
+                            Cats
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="adoption.jpg" alt="adoptionimg" class="service-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Register your pet for adoption</h2>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='adoption.html'">
+                            Register
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="volunteer.jpg" alt="volunteerimg" class="service-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Volunteer Yourself to help the cause</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='volunteer.html'">
+                            Volunteer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="donation.avif" alt="donationimg" class="service-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Donate to help us</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='donate.html'">
+                            Donate
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contacts'">
+    </section>
+
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+                <img src="insta.png" alt="insta icon" class="icon contact-icon">
+                <p class="text1"><a href="https://www.instagram.com/">Instagram</a>
+                </p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="facebook.png" alt="fb icon" class="icon contact-icon">
+                <p class="text1"><a href="https://www.facebook.com/">Facebook</a>
+                </p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p class="text"><a href="mailto:examplemail@gmail.com">whiskerwonders@gmail.com</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Whisker Wonders. All Rights Reserved</p>
+    </footer>
+
+    <!-- <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['', '', ''],
+            typeSpeed: 65,
+        });
+    </script>-->
+</body>
+
+</html>

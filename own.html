@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href='index.html'>Whisker Wonders</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Whisker Wonders</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#services" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact me</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="services">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbx40Yvyikx0bXbaVirRFuykrEtie_nYC4QtShtHrYL3dL12x_t8RGZQnl9gP-ViQrF_qA/exec" name="own-form">
+                            <div class="container">
+                                <h1>Register</h1>
+                                <p>Please fill in this form to adopt a pet.</p>
+                                <hr>
+
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                                <label for="phno"><b>Phone Number</b></label>
+                                <input type="text" placeholder="Enter Phone Number" name="phno" id="phno" required>
+
+                                <label for="type"><b>Type of Animal</b></label><br>
+
+                                <label>
+                                    <input type="radio" id="dog" name="type" value="1">
+                                    <label for="html">Dog</label><br></label>
+
+                                <label>
+                                    <input type="radio" id="cat" name="type" value="2">
+                                    <label for="css">Cat</label><br></label><br>
+
+                                <label for="aniname"><b>Name of the Animal</b></label>
+                                <input type="text" placeholder="Enter the name of animal" name="aniname" id="aniname" required>
+
+                                <label for="date"><b>Date for appointment</b></label>
+                                <input type="date" placeholder="Enter Date" name="date" id="date" required>
+                                <hr>
+
+                                <button type="submit" class="registerbtn">Register</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx40Yvyikx0bXbaVirRFuykrEtie_nYC4QtShtHrYL3dL12x_t8RGZQnl9gP-ViQrF_qA/exec'
+
+const form = document.forms['own-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+    </script>
+</body>
+
+</html>
